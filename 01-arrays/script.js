@@ -25,6 +25,13 @@ console.log(fourthTeacher)
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
 
+// metodo + efficiente
+
+teachers[4] = 'Patrick'
+console.log(teachers)
+
+// metodo possibile
+
 teachers.splice(4, 1, 'Patrick')
 console.log(teachers)
 
@@ -50,27 +57,22 @@ console.log(teachers)
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
-const lewisIndex = teachers.lastIndexOf('Lewis');
+
+const lewisIndex = teachers.indexOf('Lewis');
 console.log(lewisIndex)
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
 
-const isTeachersEmpty = null
+
+
+// 8 corretta dal teacher
+
+
+const isTeachersEmpty = teachers.length === 0;
+console.log(isTeachersEmpty)
 
 
 
-if (teachers.lenght === 0) {
-
-
-  console.log('array vuoto')
-}
-else {
-
-  (teachers.length != 0)
-
-  console.log('array non è vuoto')
-
-}
 
 
